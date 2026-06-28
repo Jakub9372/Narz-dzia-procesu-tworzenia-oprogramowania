@@ -1,0 +1,10 @@
+{
+    "cel_kalorii": 2000,
+    "lista_posilkow": [
+        {
+            "nazwa": "chleb",
+            "kalorie": 1234,
+            "kategoria": "Śniadanie"
+        }
+    ]
+}
