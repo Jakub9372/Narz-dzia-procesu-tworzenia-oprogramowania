@@ -1,6 +1,4 @@
-# Menedżer Wydatków Domowych (Expense Tracker Pro)
-
-Aplikacja okienkowa (GUI) napisana w języku Python przy użyciu biblioteki `tkinter`. Służy do monitorowania codziennych finansów, kategoryzowania kosztów oraz automatycznego wyliczania statystyk budżetowych.
+# FitLicznik Pro — Twój Osobisty Kalkulator Kalorii
 
 ## Autor
 - **Imię i Nazwisko:** Jakub Tyszko
@@ -8,26 +6,28 @@ Aplikacja okienkowa (GUI) napisana w języku Python przy użyciu biblioteki `tki
 
 ---
 
-## Funkcje aplikacji
-* **Trwałość danych :** Wydatki automatycznie zapisują się w pliku strukturalnym `wydatki_dane.json`, co pozwala zachować historię po zamknięciu programu.
-* **Dynamiczne Filtrowanie:** Możliwość podglądu wydatków tylko z jednej wybranej kategorii wraz z automatyczną aktualizacją sumy dla danego filtra.
-* **Pełna Walidacja Danych:** Odporność programu na puste pola formularzy oraz wprowadzanie błędnych znaków (np. liter zamiast kwot finansowych).
+## Co posiada aplikacja
+* **Trwałość i persistencyjność danych:** Użycie pliku `kalorie_dane.json` gwarantuje, że po ponownym uruchomieniu aplikacji dane użytkownika (wpisane posiłki oraz zmodyfikowany cel kaloryczny) zostaną automatycznie przywrócone.
+* **Filtrowanie rekordów:** Możliwość segregowania wpisów według kategorii (*Śniadanie*, *Obiad*, *Kolacja*, *Przekąska*), co znacznie poprawia czytelność przy wielu wpisach.
+* **System powiadomień wizualnych:** Pasek postępu (`Progressbar`) oraz dynamiczna zmiana kolorów podsumowania (zielony, żółty, czerwony) informują o stopniu realizacji założeń dietetycznych.
+* **Pełna odporność na błędy:** Walidacja typów danych zabezpiecza program przed crashowaniem w wyniku wpisania liter zamiast cyfr lub ujemnych wartości.
+* **Kompletna dokumentacja:** Kod źródłowy posiada pełne opisy klas i metod za pomocą standardu docstring oraz komentarzy strukturalnych.
 
 ---
 
-## Struktura repozytorium
-* `app.py` - Główny kod źródłowy aplikacji z kompletnym interfejsem GUI oraz pełną dokumentacją kodu (docstringi, komentarze).
-* `wydatki_dane.json` - Plik z bazą danych (tworzony automatycznie przy pierwszym uruchomieniu).
-* `README.md` - Niniejszy plik dokumentacji technicznej i instrukcji w formacie Markdown.
+## Struktura plików w repozytorium
+* `app.py` - Główny program wykonywalny zawierający logikę aplikacji i warstwę wizualną.
+* `kalorie_dane.json` - Lokalna tekstowa baza danych w formacie JSON (generowana przy pierwszym uruchomieniu).
+* `README.md` - Niniejsza dokumentacja techniczna projektu stworzona w formacie Markdown.
 
 ---
 
-## Instrukcja uruchomienia aplikacji
+## Instrukcja instalacji i uruchomienia
 
-### Wymagania wstępne
-Do uruchomienia aplikacji wymagane jest posiadanie zainstalowanego środowiska **Python w wersji 3.x**. Biblioteka graficzna `tkinter`.
+### Wymagania techniczne
+Aplikacja bazuje wyłącznie na bibliotekach standardowych standardu **Python 3.x**.
 
-### Krok po kroku
-1. Pobierz zawartość tego repozytorium na swój dysk twardy lub sklonuj je poleceniem:
+### Procedura uruchomienia
+1. Sklonuj repozytorium na lokalne urządzenie:
    ```bash
-   git clone [LINK_DO_TWOJEGO_REPOZYTORIUM]
+   git clone [TUTAJ_WKLEISZ_LINK_DO_TEGO_REPOZYTORIUM_PO_JEGO_UTWORZENIU]
